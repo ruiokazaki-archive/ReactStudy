@@ -11,10 +11,10 @@ const Calculator = () => {
 
   return (
     <div>
-      <lebel>
-        温度を入力してください :
+      <label>
+        温度を入力してください:
         <input type="number" value={temperature} onChange={handleChange} />
-      </lebel>
+      </label>
       <BoilingVerdict celsius={temperature} />
     </div>
   );

@@ -28,7 +28,6 @@ class Clock extends React.Component {
     super(props);
     this.state = { date: new Date() };
   }
-
   componentDidMount() {
     this.timerID = setInterval(() => {
       this.tick();
@@ -40,6 +39,11 @@ class Clock extends React.Component {
 
   tick() {
     this.setState({ date: new Date() });
+    // setState()
+    // Stateを新しい値に変更する。
+
+    // this.state.date = new Date();
+    // stateを直接変更すると再レンダリングされない
   }
 
   render() {
